@@ -151,7 +151,6 @@ fn main() -> Result<(), std::io::Error> {
         "6000",
     ])?;
 
-    // std::thread::sleep(Duration::from_secs(20));
     // Start the ETH RPC
     let eth_rpc = generate_child_process(ETH_RPC_BIN, [
         "--chain",
